@@ -1,0 +1,33 @@
+.container {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.headerTitle {
+  text-align: end;
+}
+
+.headerSNSs {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.headerSNS {
+  margin: 0 0.25rem;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
