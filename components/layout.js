@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <div className={styles.headerTop}>
-              <Image priority src="/images/flower.jpg" className={utilStyles.borderCircle} height={144} width={144} alt={englishName} />
+              <img priority src="/images/flower.jpg" className={utilStyles.borderCircle} height={144} width={144} alt={englishName} />
               <div className={styles.headerTitle}>
                 <h1 className={utilStyles.heading2Xl}>
                   {koreanName}
@@ -36,47 +36,52 @@ export default function Layout({ children, home }) {
                 </h1>
               </div>
             </div>
+            <div className={styles.headerSNSs}>
+              <Link href="https://www.instagram.com/2eoseo/">
+                <a target="_blank" className={styles.headerSNS}>
+                  <img priority src="/images/instagram.svg" height={32} width={32} alt="instagram" />
+                </a>
+              </Link>
+              <Link href="mailto:md2eoseo@gmail.com">
+                <a className={styles.headerSNS}>
+                  <img priority src="/images/mail.svg" height={32} width={32} alt="mail" />
+                </a>
+              </Link>
+            </div>
           </>
         ) : (
           <>
             <div className={styles.headerTop}>
-              <Link href="/">
-                <a>
-                  <Image priority src="/images/flower.jpg" className={utilStyles.borderCircle} height={108} width={108} alt={englishName} />
-                </a>
-              </Link>
-              <div className={styles.headerTitle}>
-                <h2 className={utilStyles.headingLg}>
-                  <Link href="/">
-                    <a className={utilStyles.colorInherit}>
-                      {koreanName}
-                      <br />
-                      {englishName}
-                    </a>
-                  </Link>
-                </h2>
+              <div>
+                <Link href="/">
+                  <a>
+                    <img priority src="/images/flower.jpg" className={utilStyles.borderCircle} height={48} width={48} alt={englishName} />
+                  </a>
+                </Link>
+              </div>
+              <div className={styles.headerSNSs}>
+                <Link href="https://www.instagram.com/2eoseo/">
+                  <a target="_blank" className={styles.headerSNS}>
+                    <img priority src="/images/instagram.svg" height={32} width={32} alt="instagram" />
+                  </a>
+                </Link>
+                <Link href="mailto:md2eoseo@gmail.com">
+                  <a className={styles.headerSNS}>
+                    <img priority src="/images/mail.svg" height={32} width={32} alt="mail" />
+                  </a>
+                </Link>
               </div>
             </div>
           </>
         )}
-        <div className={styles.headerSNSs}>
-          <Link href="https://www.instagram.com/2eoseo/">
-            <a target="_blank" className={styles.headerSNS}>
-              <img priority src="/images/instagram.svg" height={32} width={32} alt="instagram" />
-            </a>
-          </Link>
-          <Link href="mailto:md2eoseo@gmail.com">
-            <a className={styles.headerSNS}>
-              <img priority src="/images/mail.svg" height={32} width={32} alt="mail" />
-            </a>
-          </Link>
-        </div>
       </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>
+              <img priority src="/images/back.svg" height={64} width={64} alt="back" />
+            </a>
           </Link>
         </div>
       )}
