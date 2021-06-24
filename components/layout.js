@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import SNSLinks from './snsLinks';
 
 const koreanName = '김성태';
 const englishName = 'Seongtae Kim';
@@ -36,18 +36,7 @@ export default function Layout({ children, home }) {
                 </h1>
               </div>
             </div>
-            <div className={styles.headerSNSs}>
-              <Link href="https://www.instagram.com/2eoseo/">
-                <a target="_blank" className={styles.headerSNS}>
-                  <img priority src="/images/instagram.svg" height={32} width={32} alt="instagram" />
-                </a>
-              </Link>
-              <Link href="mailto:md2eoseo@gmail.com">
-                <a className={styles.headerSNS}>
-                  <img priority src="/images/mail.svg" height={32} width={32} alt="mail" />
-                </a>
-              </Link>
-            </div>
+            <SNSLinks />
           </>
         ) : (
           <>
@@ -59,18 +48,7 @@ export default function Layout({ children, home }) {
                   </a>
                 </Link>
               </div>
-              <div className={styles.headerSNSs}>
-                <Link href="https://www.instagram.com/2eoseo/">
-                  <a target="_blank" className={styles.headerSNS}>
-                    <img priority src="/images/instagram.svg" height={32} width={32} alt="instagram" />
-                  </a>
-                </Link>
-                <Link href="mailto:md2eoseo@gmail.com">
-                  <a className={styles.headerSNS}>
-                    <img priority src="/images/mail.svg" height={32} width={32} alt="mail" />
-                  </a>
-                </Link>
-              </div>
+              <SNSLinks />
             </div>
           </>
         )}
