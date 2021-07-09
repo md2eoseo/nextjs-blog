@@ -27,7 +27,14 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <div className={styles.headerTop}>
-              <img priority src="/images/flower.jpg" className={utilStyles.borderCircle} height={144} width={144} alt={englishName} />
+              <img
+                priority="true"
+                src="/images/flower.jpg"
+                className={utilStyles.borderCircle}
+                height={144}
+                width={144}
+                alt={englishName}
+              />
               <div className={styles.headerTitle}>
                 <h1 className={utilStyles.heading2Xl}>
                   {koreanName}
@@ -44,7 +51,14 @@ export default function Layout({ children, home }) {
               <div>
                 <Link href="/">
                   <a>
-                    <img priority src="/images/flower.jpg" className={utilStyles.borderCircle} height={48} width={48} alt={englishName} />
+                    <img
+                      priority="true"
+                      src="/images/flower.jpg"
+                      className={utilStyles.borderCircle}
+                      height={48}
+                      width={48}
+                      alt={englishName}
+                    />
                   </a>
                 </Link>
               </div>
@@ -58,7 +72,7 @@ export default function Layout({ children, home }) {
         <div className={styles.backToHome}>
           <Link href="/">
             <a>
-              <img priority src="/images/back.svg" height={64} width={64} alt="back" />
+              <img priority="true" src="/images/back.svg" height={64} width={64} alt="back" />
             </a>
           </Link>
         </div>
