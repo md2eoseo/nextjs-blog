@@ -3,8 +3,6 @@ title: 'JavaScript: var, let, const'
 date: '2021-07-26'
 ---
 
-[TOC]
-
 # var
 
 - 함수 스코프에 종속된다.
