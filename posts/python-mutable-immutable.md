@@ -1,5 +1,5 @@
 ---
-title: 'Python: Mutable vs. Immutable'
+title: 'Python: Mutable, Immutable'
 date: '2021-07-09'
 ---
 
